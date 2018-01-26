@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy-fonts": "copyfiles -f ./fonts/* ./dist/fonts/",
-    "build-css": "node-sass ./scss/main.scss ./dist/main.css && uglifycss ./dist/main.css > ./dist/main.min.css"
+    "copy-files": "node ./task/copy-files.js",
+    "build-css": "node-sass --include-path node_modules ./scss/main.scss ./dist/main.css && uglifycss ./dist/main.css > ./dist/main.min.css"
   },
   "author": "Luan Oliveira",
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "copy": "^0.3.1",
     "copyfiles": "^1.2.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
     "node-sass": "^4.7.2",
+    "popper.js": "^1.12.9",
     "uglifycss": "0.0.27"
   }
 }

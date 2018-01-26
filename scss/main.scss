@@ -1,11 +1,10 @@
-/*
- * comentário
- */
+@import 'variables'; 
 
-$img-src: '../imgs/';
+@import 'font-awesome/scss/font-awesome';
+@import 'bootstrap/scss/bootstrap';
 
 body {
-    background-image: url($img-src + 'google.png');
+    background-image: url($imgs-src + 'google.png');
     background-repeat: no-repeat;
     background-color: #EEEEEE;
     color: #333333;
