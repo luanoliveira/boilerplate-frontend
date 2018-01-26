@@ -1,0 +1,12 @@
+/*
+ * comentário
+ */
+
+$img-src: '../imgs/';
+
+body {
+    background-image: url($img-src + 'google.png');
+    background-repeat: no-repeat;
+    background-color: #EEEEEE;
+    color: #333333;
+}
