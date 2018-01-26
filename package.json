@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy-files": "node ./task/copy-files.js",
-    "build-css": "node-sass --include-path node_modules ./scss/main.scss ./dist/main.css && uglifycss ./dist/main.css > ./dist/main.min.css"
+    "build-css": "node-sass --include-path node_modules ./scss/main.scss ./dist/main.css && uglifycss ./dist/main.css > ./dist/main.min.css",
+    "build-scripts": "node ./task/build-scripts.js"
   },
   "author": "Luan Oliveira",
   "license": "ISC",
